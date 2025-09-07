@@ -10,27 +10,31 @@ const overlayDiv = document.querySelector(".overlay");
 
 const portfolioInfo = [
   {
-    img: "cr7 THE G.O.A.T.jpg",
+    a:"https://github.com/SamuelProgrammingBest/My-Portfolio-Page",
+    img: "public/portfo.jpeg",
     h3: "Architecture",
     p: "Architecture",
     filter: "BD",
   },
 
   {
-    img: "cr7 THE G.O.A.T.jpg",
+    a:"https://github.com/SamuelProgrammingBest/next-15-duolingo-clone-app-",
+    img: "public/portfo.jpeg",
     h3: "Architecture",
     p: "Architecture",
     filter: "BD",
   },
 
   {
-    img: "cr7 THE G.O.A.T.jpg",
+    a:"https://github.com/SamuelProgrammingBest/Sing-In-page-for-Facebook-clone",
+    img: "public/portfo.jpeg",
     h3: "Architecture",
     p: "Architecture",
     filter: "BD",
   },
 
   {
+    a:"https://github.com/SamuelProgrammingBest/Level-One-Assignments",
     img: "cr7 THE G.O.A.T.jpg",
     h3: "Architecture",
     p: "Architecture",
@@ -38,34 +42,39 @@ const portfolioInfo = [
   },
 
   {
-    img: "cr7 THE G.O.A.T.jpg",
+    a:"https://github.com/SamuelProgrammingBest/My-Portfolio-Page",
+    img: "public/portfo.jpeg",
     h3: "Architecture",
     p: "Architecture",
     filter: "3D",
   },
 
   {
-    img: "cr7 THE G.O.A.T.jpg",
+    a:"https://github.com/SamuelProgrammingBest/next-15-duolingo-clone-app-",
+    img: "public/portfo.jpeg",
     h3: "Architecture",
     p: "Architecture",
     filter: "3D",
   },
 
   {
-    img: "cr7 THE G.O.A.T.jpg",
+    a:"https://github.com/SamuelProgrammingBest/Sing-In-page-for-Facebook-clone",
+    img: "/public/portfo.jpeg",
     h3: "Architecture",
     p: "Architecture",
     filter: "HB",
   },
 
   {
-    img: "cr7 THE G.O.A.T.jpg",
+    a:"https://github.com/SamuelProgrammingBest/Level-One-Assignments",
+    img: "public/portfo.jpeg",
     h3: "Architecture",
     p: "Architecture",
     filter: "HB",
   },
 
   {
+    a:"https://github.com/SamuelProgrammingBest/My-Portfolio-Page",
     img: "cr7 THE G.O.A.T.jpg",
     h3: "Architecture",
     p: "Architecture",
@@ -79,12 +88,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 portfolioInfo.forEach((portfolio) => {
   html += `
-    <a href="#">
+    <a href="${portfolio.a}" target="_blank">
         <div class="portfolio">
           <div class="img">
             <img src="${portfolio.img}" alt="">
             <div class="overlayImg"></div>
-            <div class="eye">😎</div>
+            <div class="eye"><i class="fa-solid fa-eye"></i></div>
           </div>
           <div class="wordsPort">
             <h3>${portfolio.h3}</h3>
@@ -160,12 +169,12 @@ filterPort.forEach((filter) => {
     if (filterValue === "all") {
       portfolioInfo.forEach((portfolio) => {
         html += `
-        <a href="#">
+        <a href="${portfolio.a}" target="_blank">
         <div class="portfolio">
           <div class="img">
             <img src="${portfolio.img}" alt="">
             <div class="overlayImg"></div>
-            <div class="eye">😎</div>
+            <div class="eye"><i class="fa-solid fa-eye"></i></div>
           </div>
           <div class="wordsPort">
             <h3>${portfolio.h3}</h3>
@@ -180,12 +189,12 @@ filterPort.forEach((filter) => {
         .filter((port) => port.filter === filterValue)
         .forEach((sort) => {
           html += `
-            <a href="#">
+            <a href="${portfolio.a}" target="_blank">
         <div class="portfolio">
           <div class="img">
             <img src="${sort.img}" alt="">
             <div class="overlayImg"></div>
-            <div class="eye">😎</div>
+            <div class="eye"><i class="fa-solid fa-eye"></i></div>
           </div>
           <div class="wordsPort">
             <h3>${sort.h3}</h3>

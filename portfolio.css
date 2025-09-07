@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", "Nunito", sans-serif ;
 }
 
 body {
@@ -81,8 +82,8 @@ body {
     content: "“";
     font-size: 7em;
     color: #d9c03f;
-    left: 25px;
-    bottom: -20px;
+    left: 45px;
+    bottom: 0px;
 }
 
 .show > .testi .word-testi {
@@ -131,10 +132,14 @@ body {
 }
 
 .maj-info .img {
-    font-size: 3em;
     background: rgb(79, 79, 79);
     padding: 25px;
     border-radius: 15px;
+}
+
+.maj-info img {
+    width: 100%;
+    height: 100%;
 }
 
 .maj-info .name {
@@ -155,6 +160,8 @@ body {
     border-radius: 7.5px;
     margin-top: -10px;
     font-weight: 500;
+    width: 100%;
+    text-align: center;
 }
 
 .socials-one {
@@ -177,9 +184,14 @@ body {
     font-size: 1.25em;
     box-shadow: -2px -1px 2.5px rgba(68, 63, 65, 0.8), -1px 6px 7px rgba(36, 35, 39, 0.9);
     padding: 12px;
+    padding-bottom: 8px;
     height: 100%;
     border-radius: 10px;
     margin-right: 15px;
+    color: #d9c03f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .soc .details {
@@ -201,8 +213,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    font-size: 1.2em;
+    gap: 20px;
+    font-size: 1.5em;
+    color: #fff;
+    cursor: pointer;
+}
+
+.socials-two p {
+    transition: color 0.3s ease;
+}
+
+.socials-two p:hover {
+    color: #d9c03f;
 }
 
 .info {
@@ -303,6 +325,7 @@ nav ul li.active {
 
 .dos .icon {
     font-size: 1.4em;
+    color: #d9c03f;
 }
 
 .inner h3 {
@@ -336,7 +359,7 @@ nav ul li.active {
 }
 
 .testimonials {
-    height: 270px;
+    height: 340px;
     padding: 0 20px 0px 20px;
 }
 /* 
@@ -398,12 +421,20 @@ nav ul li.active {
 
 .testi .img {
     position: absolute;
-    top: -50%;
+    top: -55%;
     left: 10%;
     font-size: 3em;
     background: rgb(95, 95, 95);
     padding: 25px;
     border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testi .img img {
+    width: 70px;
+    height: 70px;
 }
 
 .testi h3 {
@@ -619,6 +650,10 @@ nav ul li.active {
     margin-right: 15px;
     scale: 0;
     transition:  scale 0.3s ease;
+    color: #d9c03f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .portfolio:hover img{
